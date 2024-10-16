@@ -1,0 +1,32 @@
+/* 添加必要的样式 */
+
+.text-image-container {
+  width: 1080px;
+  height: 1920px;
+  background-color: #ffffff;
+  padding: 60px;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.selected-text {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.context-text {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.context-before {
+  margin-bottom: 40px;
+}
+
+.context-after {
+  margin-top: 40px;
+}
+

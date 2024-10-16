@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "SnapShare",
+  "version": "1.0",
+  "description": "将选中的文本转换为图片并分享",
+  "permissions": [
+    "activeTab",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2canvas.min.js", "qrcode.min.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
